@@ -27,9 +27,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', redirectTo: 'usuarios', pathMatch: 'full' },
-      { path: 'usuarios', component: UsuariosComponent }
-    ]),
+    { path: '', redirectTo: 'usuarios', pathMatch: 'full' },
+    { path: 'usuarios', component: UsuariosComponent }
+], { relativeLinkResolution: 'legacy' }),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFontAwesomeModule,
     BrowserAnimationsModule,
